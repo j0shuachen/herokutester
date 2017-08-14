@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-var config = require('./backend-setup/config/config');
+var config = require('./backend-setup/config/index');
 var setupController = require('./backend-setup/controllers/setupController');
 var db;
 var port = process.env.PORT || 3000;
