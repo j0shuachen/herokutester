@@ -1,17 +1,17 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-var config = require('./config');
+var config = require('./backend-setup/config/config');
 var setupController = require('./controllers/setupController');
 var db;
 var port = process.env.PORT || 3000;
 
-var muniStopController = require('./controllers/muniStopController');
-var actransitBusController = require('./controllers/actransitBusController');
-var muniBusController = require('./controllers/muniBusController');
-var actransitStopController = require('./controllers/actransitStopController');
-var bartStopController = require('./controllers/bartStopController');
-var caltrainStopController = require('./controllers/caltrainStopController');
+var muniStopController = require('./backend-setup/controllers/muniStopController');
+var actransitBusController = require('./backend-setup/controllers/actransitBusController');
+var muniBusController = require('./backend-setup/controllers/muniBusController');
+var actransitStopController = require('./backend-setup/controllers/actransitStopController');
+var bartStopController = require('./backend-setup/controllers/bartStopController');
+var caltrainStopController = require('./backend-setup/controllers/caltrainStopController');
 
 app.use('/assets', express.static(__dirname + '/public'));
 
