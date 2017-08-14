@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var config = require('./backend-setup/config/config');
-var setupController = require('./controllers/setupController');
+var setupController = require('./backend-setup/controllers/setupController');
 var db;
 var port = process.env.PORT || 3000;
 
